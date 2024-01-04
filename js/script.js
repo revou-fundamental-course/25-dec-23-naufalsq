@@ -7,7 +7,12 @@ function hitungLuas() {
         document.getElementById('hasilLuas').value = ' Masukkan nilai dengan benar ' ;
     } else {
         var luas = 0.5 * alas * tinggi;
-        document.getElementById('hasilLuas').value = 'L = 1/2 x ' + alas + ' x ' + tinggi + ' = ' + luas;
+        var hasilText = 'L = 1/2 x a x t\n';
+        hasilText += 'L = 1/2 x ' + alas + ' x ' + tinggi + '\n';
+        hasilText += 'L = ' + luas + '\n\n';
+        hasilText += 'Jadi Luas dari Segitiga = ' + luas ;
+
+        document.getElementById('hasilLuas').value = hasilText;
     }
 }
 
@@ -20,7 +25,12 @@ function hitungkeliling() {
         document.getElementById('hasilkeliling').value = ' Masukkan nilai dengan benar ' ;
     } else {
         var keliling = sisi_a + sisi_b + sisi_c;
-        document.getElementById('hasilkeliling').value = 'K = ' + sisi_a + ' + ' + sisi_b + ' + ' + sisi_c + ' = ' + keliling;
+        var hasilText = 'K = A + B + C\n';
+        hasilText += 'K = ' + sisi_a + ' + ' + sisi_b + ' + ' + sisi_c + '\n';
+        hasilText += 'K = ' + keliling + '\n\n';
+        hasilText += 'Jadi Keliling dari Segitiga = ' + keliling ;
+
+        document.getElementById('hasilkeliling').value = hasilText;
     }
 }
 
